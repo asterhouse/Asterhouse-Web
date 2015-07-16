@@ -23,22 +23,35 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="http://w.soundcloud.com/player/api.js"></script>
-  <script>
-  function play() {
-    $(document).ready(function() {
-                var widgetIframe = document.getElementById('sc-widget'),
-                widget = SC.Widget(widgetIframe);
+  <script src="js/soundcloud.js"></script>
+  // <script>
+  // function play() {
+  //   $(document).ready(function() {
+  //               var widgetIframe = document.getElementById('sc-widget'),
+  //               widget = SC.Widget(widgetIframe);
 
-                widget.bind(SC.Widget.Events.READY, function() {
-                console.log('ready');
-                widget.toggle()
-                });
-                // $('playButton').click(function() {
-                    //widget.toggle();
+  //               widget.bind(SC.Widget.Events.READY, function() {
+  //               console.log('ready');
+  //               widget.toggle()
 
-                // });
-            });
-}</script>
+  //               var playButton = document.getElementById('i.play_button');
+  //               if (playButton.hasClass('fa-play-circle')) {
+  //                   playButton.removeClass('fa-play-circle');
+  //                   playButton.addClass('fa-pause');
+  //               }
+  //               else {
+  //                   playButton.removeClass('fa-pause');
+  //                   playButton.addClass('fa-play-circle');
+  //               }
+
+  //           });
+  //       });
+  //   }
+  //       $('i.button').click(function() {
+  //           $(this).toggleClass('fa-play-circle' 'fa-pause');
+  //       });
+        
+  //   </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -79,7 +92,8 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#" onclick="play()" class="btn btn-default"><i class="fa fa-play fa-fw fa-1x"></i>
+                        <a href="javascript:void(0);" id="i.play_button" >
+                            <i id="play_button" class="i.play_button fa fa-play-circle fa-1x"></i>
                         </a>
                     </li>
                    <!--  <li>

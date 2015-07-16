@@ -35,4 +35,13 @@ $('.play-button-link').click(function() {
       playButton.removeClass('fa-pause');
       playButton.addClass('fa-play-circle');
     }
+    $(document).ready(function() {
+        var widgetIframe = document.getElementById('sc-widget'),
+        widget = SC.Widget(widgetIframe);
+
+        widget.bind(SC.Widget.Events.READY, function() {
+        console.log('ready');
+        widget.toggle();
+      });
+    });
 });

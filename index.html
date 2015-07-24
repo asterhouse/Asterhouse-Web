@@ -16,11 +16,14 @@
 
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/full-slider.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -39,7 +42,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll hidden-xs" href="#page-top">
                     Asterhouse
                 </a>
             </div>
@@ -61,8 +64,11 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
+                       <div class="circle"></div>
+                    </li>
+                    <li>
                         <a href="javascript:void(0);" id="i.play_button" class="play-button-link" >
-                            <i id="play_button" class="play-button fa fa-play-circle fa-1x hidden-xs"></i>
+                            <i class="play-button fa fa-play-circle fa-1x hidden-xs"></i>
                         </a>
                     </li>
                    <!--  <li>
@@ -93,12 +99,41 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro">
+        <header id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="overlay"></div>
+                <div class="item active back1"></div>
+                <div class="item back2"></div>
+                <div class="item back3"></div>
+                <div class="item back4"></div>
+                <div class="item back5"></div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+
+        </header>
+    <!-- <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <img class="not-that-fucking-big" src="img/logo_transparent.png"/>
+                        <img class="not-that-fucking-big" src="img/Asterhouse - transparent black.png"/>
                         <p class="intro-text">Self-titled album out now!</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -107,15 +142,20 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Us</h2>
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>About</h2>
+                <p>Asterhouse is a rock band formed in Kenmore in 2014. Raised on a healthy diet of The Doors, Smashing Pumpkins, and Incubus, the Thornburg brothers have been making music together since they were young kids. They later met Julio to form Asterhouse.</p>
+
+                <p>They have been playing loud and energetic from the beginning. However, recently they’ve been exploring a calmer sound of music more along the lines of Elliott Smith and Wilco. As a result, their songs are made up of a variety of different sounds and moods to fit every occasion.</p>
+
+                <p>Asterhouse has played in many popular Seattle venues such as The Crocodile and El Corazon. Click the <a class="page-scroll" href="#shows">shows</a> link to see a list of their upcoming shows and click <a href="javascript:void(0);" id="i.play_button" class="play-button-link">here</a> to hear their newest music!</p>
                 <!-- <p>John, Julio and Russ are virtual "Students" of 60's/70's Classic Rock and 90's Grunge has formed their sound into something new but strangely familiar and appeals to a very WIDE Demographic of listeners.</p> -->
-                <p>Imagine a 19 year old Jim Morrison/Robert Plant/Roger Daltrey/Kurt Cobain Writing for a 15 year old Jimmy Page/Pete Townsend/Tom Morello on Guitar, 18 year old John Entwistle/Bill Wyman on Bass and a 19 Year old John Bonham/Kieth Moon/Mike Portnoy on Drums while still pulling off the lead vocals at the same time, much like Mickie Dolenz (the monkeys), Levon Helm (the band), Don Henley (the eagles), Phil Colins (solo/genesis), but sounding closer to a Billy Corgan of Smashing Pumpkins.</p>
+                
                 <!-- <p>John started taking drum lessons at the age of 6 from Seattle Legend Steve Smith. Russ started taking Guitar Lessons at the age of 9. The word "prodigy" is often used when describing both of them. Julio Posada, having only picked up the bass in 2009 has quickly developed a strong and fluent style that is truly his own.</p> -->
             </div>
         </div>
@@ -127,7 +167,7 @@
               <img src="img/john-1.jpg" width="100%">
               <p>
               <br/ >
-              John Thornburg is a master of vocals and drums and can often be seen hanging out at Chet's By The Bay in Edmonds with his long time friend Chet Stanton.
+              John Thornburg has been rocking on the drums from a really young age, growing up with bands like Wilco and The Doors. With musical influences like Billy Corgan and Bob Dylan, he has created a style that can only be described as John Thornburg.
               <br/ >
             </p>
 
@@ -140,8 +180,7 @@
 
               <p>
               <br/ >
-              Russ Thornburg has been playing guitar since the uterus and
-              loves to play loud and proud. He's recorded a few solo project and recently lost his life-long partner, Holly.
+              Russ Thornburg has been shredding for over a decade and is still under 20. His skills are far beyond his years and with role models like Jimmy Page and Jim Morrison, he has a sound like nothing else, and always turns the amp to 11.
               <br/ >
             </p>
 
@@ -153,7 +192,7 @@
                 <img src="img/julio-2.jpg" width="100%">
           <p>
               <br/ >
-              Julio Posada has his own style of playing bass and loves eating granola bars during shows.
+              Julio Posada has a sound of his own from the influences of John Entwistle, Ben Kenny, and Trent Reznor. Growing up with bands like Incubus, Nine Inch Nails and Type O Negative, he has only played for 6 years and already has fluency of bassists many years older.
               <br/ >
             </p>
           </div>
@@ -204,7 +243,7 @@
     </section>
     <section id="listen" class="container content-section">
         <div class="row">
-            <iframe id="sc-widget" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208202692&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">   </iframe>
+            <iframe id="sc-widget" width="0" height="0" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/208202692&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">   </iframe>
 
         </div>
     </section>
@@ -231,6 +270,13 @@
 
     <script src="js/soundcloud.js"></script>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="jquery-circle-progress/dist/circle-progress.js"></script>
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 

@@ -24,6 +24,8 @@
 
 //     document.getElementById('play_button').onclick = play;
 
+
+
 $('.play-button-link').click(function() {
     var playButton = $('.play-button');
     if (playButton.hasClass('fa-play-circle')) {
@@ -45,3 +47,12 @@ $('.play-button-link').click(function() {
       });
     });
 });
+
+$('#circle').circleProgress({
+        value: 0.75,
+        size: 80,
+        fill: {
+            gradient: ["red", "orange"]
+        }
+    });
+

@@ -1,0 +1,108 @@
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+html,
+body {
+    width: auto;
+}
+
+#myCarousel {
+    /*padding-top: 60px;*/
+    width: auto;
+}
+
+.carousel-control {
+    margin-top: 20px;
+}
+
+.carousel-inner .item {
+    width: auto;
+    height: 50vw;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .item {
+        margin-top: 65px;
+    }
+}
+
+.carousel-inner .active.left { left: -33%; }
+.carousel-inner .next        { left:  33%; }
+.carousel-inner .prev        { left: -33%; }
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.back1 {
+    background: url(../img/band-water.jpg) no-repeat center center scroll;
+}
+
+.back2 {
+    background: url(../img/band-couch.jpg) no-repeat center center scroll;
+}
+
+.back3 {
+    background: url(../img/band-lamps.jpg) no-repeat center center scroll;
+}
+
+.back4 {
+    background: url(../img/band-couch-sad.jpg) no-repeat center center scroll;
+}
+.back5 {
+    background: url(../img/band-couch-back.jpg) no-repeat center center scroll;
+}
+
+.overlay {
+    background: url(../img/asterhouse-transparent-white.png) no-repeat;
+    position: absolute;
+    background-position: top right;
+
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 65px;
+    right: 10px;
+    pointer-events: none;
+    -webkit-background-size: 20%;
+    -moz-background-size: 20%;
+    background-size: 20%;
+    -o-background-size: 20%;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+.overlay{
+       
+      width:100%;
+      height:100%;
+    }    
+}
+
+@media (max-width: 767px) {
+    .overlay{
+       
+      width:100%;
+      height:100%;
+    }
+
+}
+@media (max-width: 480px) {
+   .overlay{
+       
+      width:100%;
+      height:100%;
+      
+
+}
+
+
+footer {
+    margin: 50px 0;
+}

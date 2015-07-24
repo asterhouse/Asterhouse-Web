@@ -72,6 +72,8 @@ a:focus {
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
+    display: none;
+    /*display: none;*/
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -259,7 +261,7 @@ a:focus {
 }
 
 .not-that-fucking-big {
-    max-width: 20%;
+    max-width: 100%;
 }
 
 .content-section {
@@ -287,6 +289,10 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 50px;
+    }
+
+    .not-that-fucking-big {
+        max-width: 100;
     }
 
     .download-section {

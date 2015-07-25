@@ -14,7 +14,7 @@ $(window).scroll(function() {
             $(".navbar-brand").hide();
         }  
     }
-    if ($(".navbar").offset().top > 500) {
+    if ($(".navbar").offset().top > 300) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
             } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");

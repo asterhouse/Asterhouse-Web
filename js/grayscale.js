@@ -23,7 +23,7 @@ $(window).scroll(function() {
 });
 
 $('#myCarousel').carousel({
-  interval: 3000
+  interval: 6000
 });
 
 // window.onafterprint = function() {

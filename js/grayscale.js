@@ -7,7 +7,7 @@
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(window).width() >= 768) {
-        if ($(".navbar").offset().top > 500) {
+        if ($(".navbar").offset().top > 300) {
             $(".navbar-custom .navbar-brand").show();
             //$(".navbar-custom .navbar-brand").visibility = "visible";
         } else {

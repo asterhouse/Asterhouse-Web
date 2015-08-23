@@ -47,12 +47,18 @@ p {
 }
 
 i {
-    font-size: 1.3vw;
+    font-size: 2vw;
+}
+
+@media(max-width: 1199px) {
+    i {
+        font-size: 1.75vw;
+    }
 }
 
 @media(max-width: 767px) {
     i {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 }
 

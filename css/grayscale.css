@@ -36,11 +36,23 @@ p {
     line-height: 1.5;
 }
 
+
+
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
         line-height: 1.6;
+    }
+}
+
+i {
+    font-size: 1.3vw;
+}
+
+@media(max-width: 767px) {
+    i {
+        font-size: 3vw;
     }
 }
 
@@ -272,13 +284,76 @@ a:focus {
     width: 100%;
     padding: 0px 0px;
     color: #fff;
-    background: url(../img/current-shows.jpg) no-repeat center center scroll;
+
+
+    /*background: url(../img/current-shows.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
-    -o-background-size: contain;
+    -o-background-size: contain;*/
 }
+/*
+.show-section #powe {
+    display:none;
+}
+
+.show-section .powered {
+    display: none !important;
+}
+
+.show-section .powered {
+    display:none;
+}
+
+.show-section .h-text {
+    margin-left: 0px;
+}
+
+.show-section .h-label {
+    display: none;
+}
+
+.show-section .h-venue {
+    float: right;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-size: 2vw;
+    color: white;
+}
+.show-section .h-date {
+    float: left;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 30px;
+    font-size: 2vw;
+    color: white;
+}*/
+
+/*@media(max-width: 1199px) {
+    .show-section .h-venue {
+    font-size: 3.5vw;
+}
+    .show-section .h-date {
+        font-size: 3.5vw;
+    }
+}
+
+@media(max-width: 767px) {
+    .show-section .h-venue {
+    font-size: 30px;
+    font-size: 4vw;
+}
+    .show-section .h-date {
+        font-size: 30px;
+        font-size: 4vw;
+    }
+}
+
+
+
+.show-section .h-footnote {
+    display: none;
+}*/
 
 #map {
     width: 100%;

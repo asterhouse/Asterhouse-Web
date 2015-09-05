@@ -36,6 +36,10 @@ p {
     line-height: 1.5;
 }
 
+i {
+    font-size: 1.5vw;
+}
+
 
 
 @media(min-width:768px) {
@@ -44,10 +48,6 @@ p {
         font-size: 20px;
         line-height: 1.6;
     }
-}
-
-i {
-    font-size: 2vw;
 }
 
 @media(max-width: 1199px) {
@@ -360,6 +360,77 @@ a:focus {
 .show-section .h-footnote {
     display: none;
 }*/
+
+.ctct-custom-form .ctct-form-required:before {
+    content: "" !important;
+}
+
+.ctct-required-form {
+    width:60% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.ctct-optional-form {
+    width:60% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.ctct-custom-form .ctct-button {
+    width:60% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-color: #1e1e1e !important;
+}
+
+.ctct-form-footer {
+    width: 60% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.band-camp {
+    border: 0; 
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 504px;
+}
+
+.sign-up {
+    text-align: justify;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 60% !important;
+}
+
+@media(max-width: 767px) {
+    .ctct-required-form {
+        width:75% !important;
+    }
+
+    .ctct-optional-form {
+        width:75% !important;
+    }
+
+    .ctct-custom-form .ctct-button {
+        width: 75% !important;
+    }
+
+    .ctct-form-footer {
+        width: 75% !important;
+    }
+
+    .sign-up {
+        width: 75% !important;
+    }
+
+    .band-camp {
+        width: 100%;
+    }
+
+}
 
 #map {
     width: 100%;

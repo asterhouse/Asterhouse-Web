@@ -99,7 +99,7 @@ hr {
      -moz-box-sizing: content-box;
           box-sizing: content-box;
   border: 1px solid rgba(255, 255, 255, .8) !important;
-  border-image: url(http://www.dca.fee.unicamp.br/~lotufo/Courses/ia-636-1995/alberto/proj5/html/pattern_Id.gif) 1 repeat !important;
+  border-image: url(///www.dca.fee.unicamp.br/~lotufo/Courses/ia-636-1995/alberto/proj5/html/pattern_Id.gif) 1 repeat !important;
 }
 pre {
   overflow: auto;

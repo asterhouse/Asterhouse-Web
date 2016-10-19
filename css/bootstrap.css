@@ -99,7 +99,7 @@ hr {
      -moz-box-sizing: content-box;
           box-sizing: content-box;
   border: 1px solid rgba(255, 255, 255, .8) !important;
-  border-image: url(img/separator_gradient.gif) 1 repeat !important;
+  border-image: url(/img/separator_gradient.gif) 1 repeat !important;
 }
 pre {
   overflow: auto;
